@@ -1,0 +1,13 @@
+# WAT framework runtime deps (the orchestration layer only).
+pydantic>=2,<3
+PyYAML>=6
+
+# NOTE on running the ML tools (classify_ecg, predict_heart_failure_risk):
+# They wrap the backend models and additionally need the heavy ML stack
+# (tensorflow, xgboost, scikit-learn, scipy) plus the model artifacts in
+# backend/model/ and "backend/ECG model/".
+#
+# Use the project's Python 3.11 virtualenv (.venv) — TensorFlow has no wheel for
+# Python 3.14. The .venv already carries the ML stack; only pydantic was missing:
+#     D:\Final Project\cardios\.venv\Scripts\python.exe -m pip install -r wat/requirements.txt
+#     D:\Final Project\cardios\.venv\Scripts\python.exe -m wat run wat/workflows/ecg_live_pipeline.yaml

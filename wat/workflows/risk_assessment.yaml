@@ -1,0 +1,35 @@
+name: risk_assessment
+description: >
+  Assess heart-failure risk from a health questionnaire supplied at runtime, then
+  persist the result. The 17 fields come from ${params.*}, so the same workflow
+  runs on real form data:
+    python -m wat run wat/workflows/risk_assessment.yaml --input-json '{"BMI":28.5,"Smoking":"Yes",...}'
+
+steps:
+  - id: assess
+    tool: predict_heart_failure_risk
+    input:
+      BMI: "${params.BMI}"
+      Smoking: "${params.Smoking}"
+      AlcoholDrinking: "${params.AlcoholDrinking}"
+      Stroke: "${params.Stroke}"
+      PhysicalHealth: "${params.PhysicalHealth}"
+      MentalHealth: "${params.MentalHealth}"
+      DiffWalking: "${params.DiffWalking}"
+      Sex: "${params.Sex}"
+      AgeCategory: "${params.AgeCategory}"
+      Race: "${params.Race}"
+      Diabetic: "${params.Diabetic}"
+      PhysicalActivity: "${params.PhysicalActivity}"
+      GenHealth: "${params.GenHealth}"
+      SleepTime: "${params.SleepTime}"
+      Asthma: "${params.Asthma}"
+      KidneyDisease: "${params.KidneyDisease}"
+      SkinCancer: "${params.SkinCancer}"
+    on_error: continue        # records a clean dependency error if XGBoost/artifacts absent
+
+  - id: persist
+    tool: persist_result
+    input:
+      label: risk_assessment
+      record: "${assess}"

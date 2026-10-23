@@ -1,0 +1,34 @@
+name: ecg_live_pipeline
+description: >
+  Acquire an ECG batch (live serial device or recorded replay), classify it with
+  the CNN-LSTM model, and persist the result. This is the proof-of-concept
+  end-to-end pipeline; it exercises contracts, references, retries, telemetry,
+  and state in one run.
+
+steps:
+  - id: read
+    tool: read_ecg_device
+    input:
+      source: replay                                   # swap to "serial" + port for hardware
+      path: "backend/ECG model/fixed_normal_ecg.csv"
+      sampleRateHz: 250
+    retry:
+      max_attempts: 2
+      on: [transient]
+
+  - id: classify
+    tool: classify_ecg
+    input:
+      samples: "${read.samples}"
+      sampleRateHz: "${read.sampleRateHz}"
+      leadOff: "${read.leadOff}"
+    retry:
+      max_attempts: 2
+      on: [transient]
+    on_error: continue        # if TF/model is absent, record the dependency error and continue
+
+  - id: persist
+    tool: persist_result
+    input:
+      label: ecg_live
+      record: "${classify}"

@@ -1,0 +1,17 @@
+name: health_qa
+description: >
+  Answer a heart-health question with the chatbot tool and persist the exchange.
+  The question is supplied at runtime:
+    python -m wat run wat/workflows/health_qa.yaml --input-json '{"message":"How much exercise is good for my heart?"}'
+
+steps:
+  - id: answer
+    tool: get_health_advice
+    input:
+      message: "${params.message}"
+
+  - id: persist
+    tool: persist_result
+    input:
+      label: health_qa
+      record: "${answer}"

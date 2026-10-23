@@ -1,0 +1,27 @@
+Flask==3.1.0
+flask-cors==5.0.1
+flask-limiter==3.8.0
+flasgger==0.9.7.1
+python-dotenv==1.0.1
+requests==2.33.1
+zeroconf==0.150.0
+pydantic==2.13.4
+PyJWT==2.13.0
+gunicorn==23.0.0
+
+joblib==1.4.2
+numpy==1.26.4
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.17.1
+xgboost==3.0.0
+
+tensorflow==2.16.2
+tensorflow-macos==2.16.2; sys_platform == "darwin" and platform_machine == "arm64"
+keras==3.5.0
+
+# --- RAG module: guideline PDF ingestion ---
+pdfplumber==0.11.9
+# --- RAG module: embeddings + retrieval evaluation ---
+sentence-transformers==3.3.1
+PyYAML==6.0.2

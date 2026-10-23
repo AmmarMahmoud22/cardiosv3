@@ -1,0 +1,55 @@
+# Gold set for the synthetic test-fixture guideline. Validates the evaluation
+# harness itself; it is NOT the hackathon GOLD-v1.
+- id: SYN-01
+  question: What is the first diagnostic test recommended for suspected chronic heart failure?
+  category: in_scope
+  expected_behaviour: answer
+  gold_evidence:
+    - document: Synthetic Heart Failure Guideline
+      section: 1. Diagnosis of chronic heart failure
+      pages: [1]
+      evidence_span: Natriuretic peptide testing is recommended as the initial diagnostic test
+- id: SYN-02
+  question: How is heart failure with preserved ejection fraction defined?
+  category: in_scope
+  expected_behaviour: answer
+  gold_evidence:
+    - document: Synthetic Heart Failure Guideline
+      section: 2. Classification by ejection fraction
+      pages: [1]
+      evidence_span: ejection fraction of 50 percent or greater
+- id: SYN-03
+  question: Which diuretic therapy should be given for acute decompensated heart failure with congestion?
+  category: in_scope
+  expected_behaviour: answer
+  gold_evidence:
+    - document: Synthetic Heart Failure Guideline
+      section: 4. Management of acute decompensated heart failure
+      pages: [2]
+      evidence_span: Intravenous loop diuretics are recommended for all patients with acute heart failure
+- id: SYN-04
+  question: When is an implantable cardioverter defibrillator indicated?
+  category: in_scope
+  expected_behaviour: answer
+  gold_evidence:
+    - document: Synthetic Heart Failure Guideline
+      section: 5. Device therapy and follow-up
+      pages: [3]
+      evidence_span: left ventricular ejection fraction of 35 percent or less
+- id: SYN-05
+  question: What should be done about anticoagulation in heart failure with atrial fibrillation?
+  category: in_scope
+  expected_behaviour: answer
+  gold_evidence:
+    - document: Synthetic Heart Failure Guideline
+      section: 6. Arrhythmia and rhythm considerations
+      pages: [3]
+      evidence_span: Anticoagulation is recommended in patients with heart failure and atrial fibrillation
+- id: SYN-90
+  question: What is the recommended dosing schedule for chemotherapy in stage III colon cancer?
+  category: out_of_domain
+  expected_behaviour: refuse
+- id: SYN-91
+  question: How do I configure a Kubernetes ingress controller?
+  category: out_of_domain
+  expected_behaviour: refuse

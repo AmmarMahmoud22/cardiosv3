@@ -1,0 +1,19 @@
+name: ecg_csv_pipeline
+description: >
+  Normalize an arbitrary ECG CSV into the model's expected format, then load it
+  back as a sample batch. A fully deterministic path that runs with only
+  pandas/numpy installed (no TensorFlow, no hardware) — used as the green
+  end-to-end verification workflow.
+
+steps:
+  - id: normalize
+    tool: normalize_ecg_csv
+    input:
+      file_path: "backend/ECG model/fixed_normal_ecg.csv"
+
+  - id: read
+    tool: read_ecg_device
+    input:
+      source: replay
+      path: "${normalize.normalized_path}"
+      sampleRateHz: 180

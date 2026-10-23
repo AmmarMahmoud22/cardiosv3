@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: cardios-backend
+    env: python
+    region: frankfurt
+    plan: standard
+    buildCommand: pip install -r requirements-render.txt
+    startCommand: gunicorn --chdir backend app:app --workers 1 --timeout 120 --bind 0.0.0.0:$PORT
+    healthCheckPath: /health
+    envVars:
+      - key: FLASK_HOST
+        value: 0.0.0.0
+      - key: APP_ENV
+        value: production
+      - key: CORS_ALLOWED_ORIGINS
+        value: https://cardios-hakathon.appwrite.network,http://localhost:5176
+      - key: EMBEDDING_PROVIDER
+        value: tfidf
+      - key: LLM_PROVIDER
+        value: extractive
+      - key: RAG_CHUNK_SIZE
+        value: 900
+      - key: RAG_CHUNK_OVERLAP
+        value: 200
+      - key: AUTH_ENABLED
+        value: false
