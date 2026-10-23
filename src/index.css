@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --cardios-emerald-50: #effcf5;
+    --cardios-emerald-100: #d8f7e7;
+    --cardios-emerald-300: #77ddb0;
+    --cardios-emerald-500: #17c979;
+    --cardios-emerald-600: #0f9d5c;
+    --cardios-emerald-700: #0c6e44;
+    --cardios-slate-950: #08251a;
+    --cardios-slate-800: #184234;
+    --cardios-slate-600: #4f6b62;
+    --cardios-surface: #f7fbf8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+    background:
+      radial-gradient(circle at top right, rgba(23, 201, 121, 0.14), transparent 24%),
+      radial-gradient(circle at left 20%, rgba(12, 110, 68, 0.08), transparent 28%),
+      var(--cardios-surface);
+    color: var(--cardios-slate-950);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Sora', sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .cardios-shell {
+    @apply bg-white/85 backdrop-blur-xl border border-emerald-100 shadow-[0_20px_60px_rgba(8,37,26,0.08)];
+  }
+
+  .cardios-section-title {
+    @apply text-3xl md:text-4xl font-semibold text-slate-950;
+  }
+
+  .cardios-kicker {
+    @apply inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700;
+  }
+}
