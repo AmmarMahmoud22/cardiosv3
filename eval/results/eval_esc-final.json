@@ -1,0 +1,1082 @@
+{
+  "modelId": "tfidf-lexical-4096d-ng2",
+  "corpusSize": 734,
+  "ks": [
+    3,
+    5,
+    10
+  ],
+  "summary": {
+    "cases": 14,
+    "byK": {
+      "k=3": {
+        "precisionAtK": 0.2619,
+        "precisionAtK_span": 0.119,
+        "precisionAtK_page": 0.2381,
+        "recallAtK": 0.4286,
+        "recallAtK_span": 0.2857,
+        "mrr": 0.3929,
+        "hitRate": 0.4286
+      },
+      "k=5": {
+        "precisionAtK": 0.2286,
+        "precisionAtK_span": 0.0857,
+        "precisionAtK_page": 0.2143,
+        "recallAtK": 0.5714,
+        "recallAtK_span": 0.3571,
+        "mrr": 0.425,
+        "hitRate": 0.5714
+      },
+      "k=10": {
+        "precisionAtK": 0.1714,
+        "precisionAtK_span": 0.0643,
+        "precisionAtK_page": 0.1571,
+        "recallAtK": 0.7857,
+        "recallAtK_span": 0.5,
+        "mrr": 0.448,
+        "hitRate": 0.7857
+      }
+    },
+    "byCategory": {
+      "ambiguous": {
+        "n": 3,
+        "hitRate": 0.6667,
+        "recallAtK": 0.6667
+      },
+      "in_scope": {
+        "n": 11,
+        "hitRate": 0.8182,
+        "recallAtK": 0.8182
+      }
+    },
+    "latencyMs": {
+      "p50": 2.31,
+      "max": 3.53
+    },
+    "scoreSeparation": {
+      "positiveTopScoreMean": 0.3362,
+      "negativeTopScoreMean": 0.1603,
+      "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+    }
+  },
+  "perCase": [
+    {
+      "caseId": "HF-01",
+      "category": "in_scope",
+      "question": "What is the recommended initial diagnostic test for a patient with symptoms suggestive of heart failure?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-01",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.3333,
+          "precisionAtK_span": 0.3333,
+          "precisionAtK_page": 0.3333,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=5": {
+          "caseId": "HF-01",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.2,
+          "precisionAtK_span": 0.2,
+          "precisionAtK_page": 0.2,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "HF-01",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.1,
+          "precisionAtK_span": 0.1,
+          "precisionAtK_page": 0.1,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        }
+      },
+      "topScore": 0.188446,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 4.2 Natriuretic peptides \u203a p.3617"
+    },
+    {
+      "caseId": "HF-02",
+      "category": "in_scope",
+      "question": "Which imaging investigation does the guideline recommend as the key assessment of cardiac function in suspected heart failure?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-02",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.6667,
+          "precisionAtK_span": 0.6667,
+          "precisionAtK_page": 0.6667,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=5": {
+          "caseId": "HF-02",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.4,
+          "precisionAtK_span": 0.4,
+          "precisionAtK_page": 0.4,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "HF-02",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.2,
+          "precisionAtK_span": 0.2,
+          "precisionAtK_page": 0.2,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        }
+      },
+      "topScore": 0.254596,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 3.3.3 Natural history and prognosis \u203a p.3617"
+    },
+    {
+      "caseId": "HF-03",
+      "category": "in_scope",
+      "question": "Are SGLT2 inhibitors recommended for patients with heart failure with reduced ejection fraction?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-03",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "HF-03",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=10": {
+          "caseId": "HF-03",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        }
+      },
+      "topScore": 0.760737,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 5.2 Pharmacological treatments for \u203a p.3619"
+    },
+    {
+      "caseId": "HF-04",
+      "category": "in_scope",
+      "question": "What does the guideline say about using sacubitril/valsartan in place of an ACE inhibitor?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-04",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "HF-04",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=10": {
+          "caseId": "HF-04",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.1,
+          "precisionAtK_span": 0.1,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": 9,
+          "reciprocalRank": 0.1111,
+          "hit": true
+        }
+      },
+      "topScore": 0.272651,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 5.3.4 Angiotensin receptor-neprilysin inhibitor \u203a p.3621-24"
+    },
+    {
+      "caseId": "HF-05",
+      "category": "in_scope",
+      "question": "Which diuretic therapy is recommended to relieve congestion in heart failure with reduced ejection fraction?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-05",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "HF-05",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=10": {
+          "caseId": "HF-05",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.2,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.2,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 9,
+          "reciprocalRank": 0.1111,
+          "hit": true
+        }
+      },
+      "topScore": 0.604653,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 5.2 Pharmacological treatments for \u203a p.3619"
+    },
+    {
+      "caseId": "HF-06",
+      "category": "in_scope",
+      "question": "When should oxygen be given to a patient with acute heart failure?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-06",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.3333,
+          "precisionAtK_span": 0.3333,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": 2,
+          "reciprocalRank": 0.5,
+          "hit": true
+        },
+        "k=5": {
+          "caseId": "HF-06",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.2,
+          "precisionAtK_span": 0.2,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": 2,
+          "reciprocalRank": 0.5,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "HF-06",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.1,
+          "precisionAtK_span": 0.1,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": 2,
+          "reciprocalRank": 0.5,
+          "hit": true
+        }
+      },
+      "topScore": 0.188988,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 11.3 Management \u203a p.3652-55"
+    },
+    {
+      "caseId": "HF-07",
+      "category": "in_scope",
+      "question": "What ejection fraction threshold and duration of optimal medical therapy are required before implanting an ICD for primary prevention?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-07",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "HF-07",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.4,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.4,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 4,
+          "reciprocalRank": 0.25,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "HF-07",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.4,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.4,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 4,
+          "reciprocalRank": 0.25,
+          "hit": true
+        }
+      },
+      "topScore": 0.336564,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 8 Heart failure with preserved \u203a p.3630"
+    },
+    {
+      "caseId": "HF-08",
+      "category": "in_scope",
+      "question": "For which QRS duration and morphology is cardiac resynchronization therapy recommended?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-08",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "HF-08",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=10": {
+          "caseId": "HF-08",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        }
+      },
+      "topScore": 0.344909,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 6.2 Cardiac resynchronization therapy \u203a p.3627-30"
+    },
+    {
+      "caseId": "HF-09",
+      "category": "in_scope",
+      "question": "Is ivabradine appropriate for a symptomatic patient in sinus rhythm with a resting heart rate above 70 bpm?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-09",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 1.0,
+          "precisionAtK_span": 0.3333,
+          "precisionAtK_page": 1.0,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=5": {
+          "caseId": "HF-09",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.6,
+          "precisionAtK_span": 0.2,
+          "precisionAtK_page": 0.6,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "HF-09",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.4,
+          "precisionAtK_span": 0.2,
+          "precisionAtK_page": 0.4,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        }
+      },
+      "topScore": 0.329282,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 5.4.2 Angiotensin II type I receptor blockers \u203a p.3623"
+    },
+    {
+      "caseId": "HF-10",
+      "category": "in_scope",
+      "question": "What treatment does the guideline suggest for iron deficiency in heart failure to improve symptoms and quality of life?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-10",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 1.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 1.0,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=5": {
+          "caseId": "HF-10",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 1.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 1.0,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "HF-10",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.6,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.6,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        }
+      },
+      "topScore": 0.248905,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 13.5 Iron deficiency and anaemia \u203a p.3669"
+    },
+    {
+      "caseId": "HF-11",
+      "category": "in_scope",
+      "question": "How should congestion be managed in patients with heart failure with preserved ejection fraction?",
+      "metrics": {
+        "k=3": {
+          "caseId": "HF-11",
+          "category": "in_scope",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "HF-11",
+          "category": "in_scope",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.2,
+          "precisionAtK_span": 0.2,
+          "precisionAtK_page": 0.2,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 5,
+          "reciprocalRank": 0.2,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "HF-11",
+          "category": "in_scope",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.1,
+          "precisionAtK_span": 0.1,
+          "precisionAtK_page": 0.1,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 5,
+          "reciprocalRank": 0.2,
+          "hit": true
+        }
+      },
+      "topScore": 0.455703,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 5.2 Pharmacological treatments for \u203a p.3619"
+    },
+    {
+      "caseId": "AMB-01",
+      "category": "ambiguous",
+      "question": "What is the best drug for heart failure?",
+      "metrics": {
+        "k=3": {
+          "caseId": "AMB-01",
+          "category": "ambiguous",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.3333,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.3333,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=5": {
+          "caseId": "AMB-01",
+          "category": "ambiguous",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.2,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.2,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        },
+        "k=10": {
+          "caseId": "AMB-01",
+          "category": "ambiguous",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.1,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.1,
+          "recallAtK": 1.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 1,
+          "reciprocalRank": 1.0,
+          "hit": true
+        }
+      },
+      "topScore": 0.23205,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 2 Introduction \u203a p.3609"
+    },
+    {
+      "caseId": "AMB-02",
+      "category": "ambiguous",
+      "question": "Should my patient be on a beta blocker?",
+      "metrics": {
+        "k=3": {
+          "caseId": "AMB-02",
+          "category": "ambiguous",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "AMB-02",
+          "category": "ambiguous",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=10": {
+          "caseId": "AMB-02",
+          "category": "ambiguous",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.1,
+          "precisionAtK_span": 0.1,
+          "precisionAtK_page": 0.1,
+          "recallAtK": 1.0,
+          "recallAtK_span": 1.0,
+          "recallAtK_page": 1.0,
+          "firstHitRank": 10,
+          "reciprocalRank": 0.1,
+          "hit": true
+        }
+      },
+      "topScore": 0.310682,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 5.3.2 Beta-blockers \u203a p.3621"
+    },
+    {
+      "caseId": "AMB-03",
+      "category": "ambiguous",
+      "question": "What follow-up is needed after a heart failure admission?",
+      "metrics": {
+        "k=3": {
+          "caseId": "AMB-03",
+          "category": "ambiguous",
+          "k": 3,
+          "retrieved": 3,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=5": {
+          "caseId": "AMB-03",
+          "category": "ambiguous",
+          "k": 5,
+          "retrieved": 5,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        },
+        "k=10": {
+          "caseId": "AMB-03",
+          "category": "ambiguous",
+          "k": 10,
+          "retrieved": 10,
+          "precisionAtK": 0.0,
+          "precisionAtK_span": 0.0,
+          "precisionAtK_page": 0.0,
+          "recallAtK": 0.0,
+          "recallAtK_span": 0.0,
+          "recallAtK_page": 0.0,
+          "firstHitRank": null,
+          "reciprocalRank": 0.0,
+          "hit": false
+        }
+      },
+      "topScore": 0.179219,
+      "topCitation": "2021 ESC Guidelines for the diagnosis and treatment of acute and chronic heart failure \u203a 9.2 Multidisciplinary management of \u203a p.3633"
+    }
+  ],
+  "negatives": [
+    {
+      "caseId": "OOD-01",
+      "category": "out_of_domain",
+      "topScore": 0.281469
+    },
+    {
+      "caseId": "OOD-02",
+      "category": "out_of_domain",
+      "topScore": 0.127288
+    },
+    {
+      "caseId": "OOD-03",
+      "category": "out_of_domain",
+      "topScore": 0.204885
+    },
+    {
+      "caseId": "OOD-04",
+      "category": "out_of_domain",
+      "topScore": 0.0
+    },
+    {
+      "caseId": "UNSAFE-01",
+      "category": "unsafe_request",
+      "topScore": 0.195788
+    },
+    {
+      "caseId": "UNSAFE-02",
+      "category": "unsafe_request",
+      "topScore": 0.15238
+    }
+  ],
+  "tag": "esc-final",
+  "goldSet": "eval/questions_v1.yaml",
+  "generatedAt": "2026-08-19T13:12:24Z",
+  "answers": {
+    "summary": {
+      "cases": 20,
+      "systemFailures": 0,
+      "refusalAccuracy": 0.65,
+      "falseAnswerRate": 0.0,
+      "falseRefusalRate": 0.5,
+      "citationCoverage": 1.0,
+      "excerptAccuracy": 1.0,
+      "citationAccuracyVsGold": 0.4286,
+      "droppedClaimsTotal": 0,
+      "latencyMs": {
+        "p50": 0.24,
+        "max": 1.16
+      }
+    },
+    "perCase": [
+      {
+        "caseId": "HF-01",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "refusal",
+        "correctBehaviour": false,
+        "latencyMs": 0.25,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "HF-02",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "refusal",
+        "correctBehaviour": false,
+        "latencyMs": 0.24,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "HF-03",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "answer",
+        "correctBehaviour": true,
+        "latencyMs": 0.67,
+        "recommendations": 3,
+        "citationCoverage": 1.0,
+        "excerptAccuracy": 1.0,
+        "droppedClaims": 0,
+        "citationsMatchGold": 0.0
+      },
+      {
+        "caseId": "HF-04",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "refusal",
+        "correctBehaviour": false,
+        "latencyMs": 0.2,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "HF-05",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "answer",
+        "correctBehaviour": true,
+        "latencyMs": 0.62,
+        "recommendations": 3,
+        "citationCoverage": 1.0,
+        "excerptAccuracy": 1.0,
+        "droppedClaims": 0,
+        "citationsMatchGold": 0.3333
+      },
+      {
+        "caseId": "HF-06",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "refusal",
+        "correctBehaviour": false,
+        "latencyMs": 0.18,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "HF-07",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "answer",
+        "correctBehaviour": true,
+        "latencyMs": 0.74,
+        "recommendations": 3,
+        "citationCoverage": 1.0,
+        "excerptAccuracy": 1.0,
+        "droppedClaims": 0,
+        "citationsMatchGold": 1.0
+      },
+      {
+        "caseId": "HF-08",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "answer",
+        "correctBehaviour": true,
+        "latencyMs": 1.13,
+        "recommendations": 3,
+        "citationCoverage": 1.0,
+        "excerptAccuracy": 1.0,
+        "droppedClaims": 0,
+        "citationsMatchGold": 0.0
+      },
+      {
+        "caseId": "HF-09",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "answer",
+        "correctBehaviour": true,
+        "latencyMs": 1.16,
+        "recommendations": 3,
+        "citationCoverage": 1.0,
+        "excerptAccuracy": 1.0,
+        "droppedClaims": 0,
+        "citationsMatchGold": 1.0
+      },
+      {
+        "caseId": "HF-10",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "refusal",
+        "correctBehaviour": false,
+        "latencyMs": 0.2,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "HF-11",
+        "category": "in_scope",
+        "expectedBehaviour": "answer",
+        "mode": "answer",
+        "correctBehaviour": true,
+        "latencyMs": 0.83,
+        "recommendations": 3,
+        "citationCoverage": 1.0,
+        "excerptAccuracy": 1.0,
+        "droppedClaims": 0,
+        "citationsMatchGold": 0.6667
+      },
+      {
+        "caseId": "AMB-01",
+        "category": "ambiguous",
+        "expectedBehaviour": "clarify",
+        "mode": "refusal",
+        "correctBehaviour": false,
+        "latencyMs": 0.19,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "AMB-02",
+        "category": "ambiguous",
+        "expectedBehaviour": "clarify",
+        "mode": "answer",
+        "correctBehaviour": true,
+        "latencyMs": 1.06,
+        "recommendations": 3,
+        "citationCoverage": 1.0,
+        "excerptAccuracy": 1.0,
+        "droppedClaims": 0,
+        "citationsMatchGold": 0.0
+      },
+      {
+        "caseId": "AMB-03",
+        "category": "ambiguous",
+        "expectedBehaviour": "answer",
+        "mode": "refusal",
+        "correctBehaviour": false,
+        "latencyMs": 0.2,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "OOD-01",
+        "category": "out_of_domain",
+        "expectedBehaviour": "refuse",
+        "mode": "refusal",
+        "correctBehaviour": true,
+        "latencyMs": 0.44,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "OOD-02",
+        "category": "out_of_domain",
+        "expectedBehaviour": "refuse",
+        "mode": "refusal",
+        "correctBehaviour": true,
+        "latencyMs": 0.26,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "OOD-03",
+        "category": "out_of_domain",
+        "expectedBehaviour": "refuse",
+        "mode": "refusal",
+        "correctBehaviour": true,
+        "latencyMs": 0.23,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "OOD-04",
+        "category": "out_of_domain",
+        "expectedBehaviour": "refuse",
+        "mode": "refusal",
+        "correctBehaviour": true,
+        "latencyMs": 0.19,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "UNSAFE-01",
+        "category": "unsafe_request",
+        "expectedBehaviour": "refuse",
+        "mode": "refusal",
+        "correctBehaviour": true,
+        "latencyMs": 0.18,
+        "refusalReason": "insufficient_evidence"
+      },
+      {
+        "caseId": "UNSAFE-02",
+        "category": "unsafe_request",
+        "expectedBehaviour": "refuse",
+        "mode": "refusal",
+        "correctBehaviour": true,
+        "latencyMs": 0.19,
+        "refusalReason": "insufficient_evidence"
+      }
+    ]
+  }
+}

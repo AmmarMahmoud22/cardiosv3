@@ -1,0 +1,558 @@
+{
+  "selectOn": "k=5",
+  "goldSet": "eval/questions_v1.yaml",
+  "generatedAt": "2026-08-19T13:08:44Z",
+  "configurations": [
+    {
+      "config": {
+        "chunkSize": 900,
+        "overlap": 100,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 646,
+      "dimension": 4096,
+      "ingestSeconds": 67.2,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.1667,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1428,
+            "recallAtK": 0.4286,
+            "recallAtK_span": 0.2143,
+            "mrr": 0.3452,
+            "hitRate": 0.4286
+          },
+          "k=5": {
+            "precisionAtK": 0.1857,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1714,
+            "recallAtK": 0.5714,
+            "recallAtK_span": 0.3571,
+            "mrr": 0.3774,
+            "hitRate": 0.5714
+          },
+          "k=10": {
+            "precisionAtK": 0.15,
+            "precisionAtK_span": 0.0643,
+            "precisionAtK_page": 0.1357,
+            "recallAtK": 0.7857,
+            "recallAtK_span": 0.5714,
+            "mrr": 0.4044,
+            "hitRate": 0.7857
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.6667,
+            "recallAtK": 0.6667
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.8182,
+            "recallAtK": 0.8182
+          }
+        },
+        "latencyMs": {
+          "p50": 2.84,
+          "max": 5.13
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.3214,
+          "negativeTopScoreMean": 0.175,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    },
+    {
+      "config": {
+        "chunkSize": 900,
+        "overlap": 200,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 734,
+      "dimension": 4096,
+      "ingestSeconds": 49.8,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.2619,
+            "precisionAtK_span": 0.119,
+            "precisionAtK_page": 0.2381,
+            "recallAtK": 0.4286,
+            "recallAtK_span": 0.2857,
+            "mrr": 0.3929,
+            "hitRate": 0.4286
+          },
+          "k=5": {
+            "precisionAtK": 0.2286,
+            "precisionAtK_span": 0.0857,
+            "precisionAtK_page": 0.2143,
+            "recallAtK": 0.5714,
+            "recallAtK_span": 0.3571,
+            "mrr": 0.425,
+            "hitRate": 0.5714
+          },
+          "k=10": {
+            "precisionAtK": 0.1714,
+            "precisionAtK_span": 0.0643,
+            "precisionAtK_page": 0.1571,
+            "recallAtK": 0.7857,
+            "recallAtK_span": 0.5,
+            "mrr": 0.448,
+            "hitRate": 0.7857
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.6667,
+            "recallAtK": 0.6667
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.8182,
+            "recallAtK": 0.8182
+          }
+        },
+        "latencyMs": {
+          "p50": 3.02,
+          "max": 4.28
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.3362,
+          "negativeTopScoreMean": 0.1603,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    },
+    {
+      "config": {
+        "chunkSize": 1400,
+        "overlap": 100,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 412,
+      "dimension": 4096,
+      "ingestSeconds": 50.2,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.2143,
+            "precisionAtK_span": 0.0952,
+            "precisionAtK_page": 0.1905,
+            "recallAtK": 0.4286,
+            "recallAtK_span": 0.2857,
+            "mrr": 0.381,
+            "hitRate": 0.4286
+          },
+          "k=5": {
+            "precisionAtK": 0.1714,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1429,
+            "recallAtK": 0.5714,
+            "recallAtK_span": 0.3571,
+            "mrr": 0.4167,
+            "hitRate": 0.5714
+          },
+          "k=10": {
+            "precisionAtK": 0.1429,
+            "precisionAtK_span": 0.0571,
+            "precisionAtK_page": 0.1214,
+            "recallAtK": 0.7143,
+            "recallAtK_span": 0.5,
+            "mrr": 0.4375,
+            "hitRate": 0.7143
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.3333,
+            "recallAtK": 0.3333
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.8182,
+            "recallAtK": 0.8182
+          }
+        },
+        "latencyMs": {
+          "p50": 2.29,
+          "max": 3.31
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.305,
+          "negativeTopScoreMean": 0.1318,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    },
+    {
+      "config": {
+        "chunkSize": 1400,
+        "overlap": 200,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 437,
+      "dimension": 4096,
+      "ingestSeconds": 48.0,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.2857,
+            "precisionAtK_span": 0.119,
+            "precisionAtK_page": 0.2619,
+            "recallAtK": 0.5,
+            "recallAtK_span": 0.2857,
+            "mrr": 0.4048,
+            "hitRate": 0.5
+          },
+          "k=5": {
+            "precisionAtK": 0.2143,
+            "precisionAtK_span": 0.1,
+            "precisionAtK_page": 0.1857,
+            "recallAtK": 0.5714,
+            "recallAtK_span": 0.4286,
+            "mrr": 0.419,
+            "hitRate": 0.5714
+          },
+          "k=10": {
+            "precisionAtK": 0.1714,
+            "precisionAtK_span": 0.0857,
+            "precisionAtK_page": 0.15,
+            "recallAtK": 0.7143,
+            "recallAtK_span": 0.5714,
+            "mrr": 0.4381,
+            "hitRate": 0.7143
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.3333,
+            "recallAtK": 0.3333
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.8182,
+            "recallAtK": 0.8182
+          }
+        },
+        "latencyMs": {
+          "p50": 2.96,
+          "max": 4.23
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.2998,
+          "negativeTopScoreMean": 0.1425,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    },
+    {
+      "config": {
+        "chunkSize": 2000,
+        "overlap": 100,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 302,
+      "dimension": 4096,
+      "ingestSeconds": 50.7,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.1667,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1667,
+            "recallAtK": 0.2857,
+            "recallAtK_span": 0.2143,
+            "mrr": 0.25,
+            "hitRate": 0.2857
+          },
+          "k=5": {
+            "precisionAtK": 0.1714,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1571,
+            "recallAtK": 0.5,
+            "recallAtK_span": 0.3571,
+            "mrr": 0.3,
+            "hitRate": 0.5
+          },
+          "k=10": {
+            "precisionAtK": 0.1429,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1286,
+            "recallAtK": 0.7857,
+            "recallAtK_span": 0.7143,
+            "mrr": 0.3372,
+            "hitRate": 0.7857
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.3333,
+            "recallAtK": 0.3333
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.9091,
+            "recallAtK": 0.9091
+          }
+        },
+        "latencyMs": {
+          "p50": 2.37,
+          "max": 3.11
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.2853,
+          "negativeTopScoreMean": 0.1241,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    },
+    {
+      "config": {
+        "chunkSize": 2000,
+        "overlap": 200,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 309,
+      "dimension": 4096,
+      "ingestSeconds": 47.6,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.2143,
+            "precisionAtK_span": 0.0952,
+            "precisionAtK_page": 0.2143,
+            "recallAtK": 0.4286,
+            "recallAtK_span": 0.2857,
+            "mrr": 0.3452,
+            "hitRate": 0.4286
+          },
+          "k=5": {
+            "precisionAtK": 0.1714,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1571,
+            "recallAtK": 0.5,
+            "recallAtK_span": 0.3571,
+            "mrr": 0.3631,
+            "hitRate": 0.5
+          },
+          "k=10": {
+            "precisionAtK": 0.1571,
+            "precisionAtK_span": 0.0786,
+            "precisionAtK_page": 0.1357,
+            "recallAtK": 0.7143,
+            "recallAtK_span": 0.6429,
+            "mrr": 0.3971,
+            "hitRate": 0.7143
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.3333,
+            "recallAtK": 0.3333
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.8182,
+            "recallAtK": 0.8182
+          }
+        },
+        "latencyMs": {
+          "p50": 2.41,
+          "max": 3.41
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.283,
+          "negativeTopScoreMean": 0.1354,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    },
+    {
+      "config": {
+        "chunkSize": 2800,
+        "overlap": 100,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 235,
+      "dimension": 4096,
+      "ingestSeconds": 47.5,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.1667,
+            "precisionAtK_span": 0.0952,
+            "precisionAtK_page": 0.1428,
+            "recallAtK": 0.4286,
+            "recallAtK_span": 0.2857,
+            "mrr": 0.25,
+            "hitRate": 0.4286
+          },
+          "k=5": {
+            "precisionAtK": 0.1857,
+            "precisionAtK_span": 0.0857,
+            "precisionAtK_page": 0.1571,
+            "recallAtK": 0.6429,
+            "recallAtK_span": 0.4286,
+            "mrr": 0.2964,
+            "hitRate": 0.6429
+          },
+          "k=10": {
+            "precisionAtK": 0.1643,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.15,
+            "recallAtK": 0.7857,
+            "recallAtK_span": 0.6429,
+            "mrr": 0.3168,
+            "hitRate": 0.7857
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.3333,
+            "recallAtK": 0.3333
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.9091,
+            "recallAtK": 0.9091
+          }
+        },
+        "latencyMs": {
+          "p50": 2.52,
+          "max": 8.41
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.274,
+          "negativeTopScoreMean": 0.1324,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    },
+    {
+      "config": {
+        "chunkSize": 2800,
+        "overlap": 200,
+        "model": "tfidf-lexical"
+      },
+      "chunks": 238,
+      "dimension": 4096,
+      "ingestSeconds": 48.6,
+      "summary": {
+        "cases": 14,
+        "byK": {
+          "k=3": {
+            "precisionAtK": 0.1905,
+            "precisionAtK_span": 0.119,
+            "precisionAtK_page": 0.1667,
+            "recallAtK": 0.4286,
+            "recallAtK_span": 0.3571,
+            "mrr": 0.25,
+            "hitRate": 0.4286
+          },
+          "k=5": {
+            "precisionAtK": 0.1857,
+            "precisionAtK_span": 0.1,
+            "precisionAtK_page": 0.1571,
+            "recallAtK": 0.6429,
+            "recallAtK_span": 0.5,
+            "mrr": 0.2964,
+            "hitRate": 0.6429
+          },
+          "k=10": {
+            "precisionAtK": 0.1429,
+            "precisionAtK_span": 0.0714,
+            "precisionAtK_page": 0.1286,
+            "recallAtK": 0.7857,
+            "recallAtK_span": 0.6429,
+            "mrr": 0.3202,
+            "hitRate": 0.7857
+          }
+        },
+        "byCategory": {
+          "ambiguous": {
+            "n": 3,
+            "hitRate": 0.3333,
+            "recallAtK": 0.3333
+          },
+          "in_scope": {
+            "n": 11,
+            "hitRate": 0.9091,
+            "recallAtK": 0.9091
+          }
+        },
+        "latencyMs": {
+          "p50": 2.26,
+          "max": 5.33
+        },
+        "scoreSeparation": {
+          "positiveTopScoreMean": 0.2807,
+          "negativeTopScoreMean": 0.1242,
+          "note": "Recorded for Phase-5 threshold calibration. NOT a calibrated confidence and not used for any decision in Phase 3."
+        }
+      }
+    }
+  ],
+  "ranked": [
+    {
+      "chunkSize": 2800,
+      "overlap": 100,
+      "model": "tfidf-lexical"
+    },
+    {
+      "chunkSize": 2800,
+      "overlap": 200,
+      "model": "tfidf-lexical"
+    },
+    {
+      "chunkSize": 900,
+      "overlap": 200,
+      "model": "tfidf-lexical"
+    },
+    {
+      "chunkSize": 1400,
+      "overlap": 200,
+      "model": "tfidf-lexical"
+    },
+    {
+      "chunkSize": 1400,
+      "overlap": 100,
+      "model": "tfidf-lexical"
+    },
+    {
+      "chunkSize": 900,
+      "overlap": 100,
+      "model": "tfidf-lexical"
+    },
+    {
+      "chunkSize": 2000,
+      "overlap": 200,
+      "model": "tfidf-lexical"
+    },
+    {
+      "chunkSize": 2000,
+      "overlap": 100,
+      "model": "tfidf-lexical"
+    }
+  ],
+  "selected": {
+    "chunkSize": 2800,
+    "overlap": 100,
+    "model": "tfidf-lexical"
+  }
+}

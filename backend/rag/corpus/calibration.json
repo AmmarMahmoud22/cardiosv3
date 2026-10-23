@@ -1,0 +1,20 @@
+{
+  "calibrationId": "cal-20260819-d79a38",
+  "signal": "top1",
+  "threshold": 0.281473,
+  "modelId": "tfidf-lexical-4096d-ng2",
+  "corpusVersion": "v1",
+  "k": 5,
+  "goldSet": "eval/questions_v1.yaml",
+  "operatingPoint": {
+    "threshold": 0.281473,
+    "falseAnswerRate": 0.0,
+    "falseRefusalRate": 0.4545,
+    "falseAnswers": 0,
+    "falseRefusals": 5,
+    "rule": "min false-refusal subject to zero false-answer",
+    "separable": true
+  },
+  "note": "Fitted on GOLD-v1, which is also the development set. Validate on held-out GOLD-v2 cases before treating these rates as unbiased.",
+  "generatedAt": "2026-08-19T13:12:21Z"
+}

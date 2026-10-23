@@ -1,0 +1,3072 @@
+{
+  "record": {
+    "calibrationId": "cal-20260819-d79a38",
+    "signal": "top1",
+    "threshold": 0.281473,
+    "modelId": "tfidf-lexical-4096d-ng2",
+    "corpusVersion": "v1",
+    "k": 5,
+    "goldSet": "eval/questions_v1.yaml",
+    "operatingPoint": {
+      "threshold": 0.281473,
+      "falseAnswerRate": 0.0,
+      "falseRefusalRate": 0.4545,
+      "falseAnswers": 0,
+      "falseRefusals": 5,
+      "rule": "min false-refusal subject to zero false-answer",
+      "separable": true
+    },
+    "note": "Fitted on GOLD-v1, which is also the development set. Validate on held-out GOLD-v2 cases before treating these rates as unbiased.",
+    "generatedAt": "2026-08-19T13:12:21Z"
+  },
+  "signals": {
+    "top1": {
+      "rows": [
+        {
+          "caseId": "HF-01",
+          "category": "in_scope",
+          "value": 0.188446
+        },
+        {
+          "caseId": "HF-02",
+          "category": "in_scope",
+          "value": 0.254596
+        },
+        {
+          "caseId": "HF-03",
+          "category": "in_scope",
+          "value": 0.760737
+        },
+        {
+          "caseId": "HF-04",
+          "category": "in_scope",
+          "value": 0.272651
+        },
+        {
+          "caseId": "HF-05",
+          "category": "in_scope",
+          "value": 0.604653
+        },
+        {
+          "caseId": "HF-06",
+          "category": "in_scope",
+          "value": 0.188988
+        },
+        {
+          "caseId": "HF-07",
+          "category": "in_scope",
+          "value": 0.336564
+        },
+        {
+          "caseId": "HF-08",
+          "category": "in_scope",
+          "value": 0.344909
+        },
+        {
+          "caseId": "HF-09",
+          "category": "in_scope",
+          "value": 0.329282
+        },
+        {
+          "caseId": "HF-10",
+          "category": "in_scope",
+          "value": 0.248905
+        },
+        {
+          "caseId": "HF-11",
+          "category": "in_scope",
+          "value": 0.455703
+        },
+        {
+          "caseId": "AMB-01",
+          "category": "ambiguous",
+          "value": 0.23205
+        },
+        {
+          "caseId": "AMB-02",
+          "category": "ambiguous",
+          "value": 0.310682
+        },
+        {
+          "caseId": "AMB-03",
+          "category": "ambiguous",
+          "value": 0.179219
+        },
+        {
+          "caseId": "OOD-01",
+          "category": "out_of_domain",
+          "value": 0.281469
+        },
+        {
+          "caseId": "OOD-02",
+          "category": "out_of_domain",
+          "value": 0.127288
+        },
+        {
+          "caseId": "OOD-03",
+          "category": "out_of_domain",
+          "value": 0.204885
+        },
+        {
+          "caseId": "OOD-04",
+          "category": "out_of_domain",
+          "value": 0.0
+        },
+        {
+          "caseId": "UNSAFE-01",
+          "category": "unsafe_request",
+          "value": 0.195788
+        },
+        {
+          "caseId": "UNSAFE-02",
+          "category": "unsafe_request",
+          "value": 0.15238
+        }
+      ],
+      "curve": [
+        {
+          "threshold": 0.0,
+          "falseAnswerRate": 1.0,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 6,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.003804,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.007607,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.011411,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.015215,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.019018,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.022822,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.026626,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.030429,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.034233,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.038037,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.041841,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.045644,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.049448,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.053252,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.057055,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.060859,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.064663,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.068466,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.07227,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.076074,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.079877,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.083681,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.087485,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.091288,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.095092,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.098896,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.102699,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.106503,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.110307,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.114111,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.117914,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.121718,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.125522,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.129325,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 4,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.133129,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 4,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.136933,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 4,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.140736,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 4,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.14454,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 4,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.148344,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 4,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.152147,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 4,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.155951,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.159755,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.163558,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.167362,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.171166,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.17497,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.178773,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.182577,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.186381,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 3,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.190184,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 3,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.193988,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 3,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.197792,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 2,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.201595,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 2,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.205399,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.209203,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.213006,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.21681,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.220614,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.224417,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.228221,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.232025,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.235828,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.239632,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.243436,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.24724,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 1,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.251043,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.2727,
+          "falseAnswers": 1,
+          "falseRefusals": 3
+        },
+        {
+          "threshold": 0.254847,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.258651,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.262454,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.266258,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.270062,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.273865,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 1,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.277669,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 1,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.281473,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5,
+          "rule": "min false-refusal subject to zero false-answer",
+          "separable": true
+        },
+        {
+          "threshold": 0.285276,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.28908,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.292884,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.296687,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.300491,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.304295,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.308098,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.311902,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.315706,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.31951,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.323313,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.327117,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 0,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.330921,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 0,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.334724,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 0,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.338528,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 0,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.342332,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 0,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.346135,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.349939,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.353743,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.357546,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.36135,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.365154,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.368957,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.372761,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.376565,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.380368,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.384172,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.387976,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.39178,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.395583,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.399387,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.403191,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.406994,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.410798,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.414602,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.418405,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.422209,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.426013,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.429816,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.43362,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.437424,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.441227,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.445031,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.448835,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.452639,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 0,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.456442,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.460246,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.46405,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.467853,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.471657,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.475461,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.479264,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.483068,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.486872,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.490675,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.494479,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.498283,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.502086,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.50589,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.509694,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.513497,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.517301,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.521105,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.524909,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.528712,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.532516,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.53632,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.540123,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.543927,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.547731,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.551534,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.555338,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.559142,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.562945,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.566749,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.570553,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.574356,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.57816,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.581964,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.585767,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.589571,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.593375,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.597179,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.600982,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.604786,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.60859,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.612393,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.616197,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.620001,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.623804,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.627608,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.631412,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.635215,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.639019,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.642823,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.646626,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.65043,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.654234,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.658038,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.661841,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.665645,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.669449,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.673252,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.677056,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.68086,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.684663,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.688467,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.692271,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.696074,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.699878,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.703682,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.707485,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.711289,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.715093,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.718896,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.7227,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.726504,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.730308,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.734111,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.737915,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.741719,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.745522,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.749326,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.75313,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.756933,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.760737,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        }
+      ],
+      "operatingPoint": {
+        "threshold": 0.281473,
+        "falseAnswerRate": 0.0,
+        "falseRefusalRate": 0.4545,
+        "falseAnswers": 0,
+        "falseRefusals": 5,
+        "rule": "min false-refusal subject to zero false-answer",
+        "separable": true
+      }
+    },
+    "margin": {
+      "rows": [
+        {
+          "caseId": "HF-01",
+          "category": "in_scope",
+          "value": 0.040499
+        },
+        {
+          "caseId": "HF-02",
+          "category": "in_scope",
+          "value": 0.116138
+        },
+        {
+          "caseId": "HF-03",
+          "category": "in_scope",
+          "value": 0.337698
+        },
+        {
+          "caseId": "HF-04",
+          "category": "in_scope",
+          "value": 0.040017
+        },
+        {
+          "caseId": "HF-05",
+          "category": "in_scope",
+          "value": 0.171341
+        },
+        {
+          "caseId": "HF-06",
+          "category": "in_scope",
+          "value": 0.016141
+        },
+        {
+          "caseId": "HF-07",
+          "category": "in_scope",
+          "value": 0.075969
+        },
+        {
+          "caseId": "HF-08",
+          "category": "in_scope",
+          "value": 0.078153
+        },
+        {
+          "caseId": "HF-09",
+          "category": "in_scope",
+          "value": 0.105004
+        },
+        {
+          "caseId": "HF-10",
+          "category": "in_scope",
+          "value": 0.035339
+        },
+        {
+          "caseId": "HF-11",
+          "category": "in_scope",
+          "value": 0.091541
+        },
+        {
+          "caseId": "AMB-01",
+          "category": "ambiguous",
+          "value": 0.086842
+        },
+        {
+          "caseId": "AMB-02",
+          "category": "ambiguous",
+          "value": 0.064271
+        },
+        {
+          "caseId": "AMB-03",
+          "category": "ambiguous",
+          "value": 0.018665
+        },
+        {
+          "caseId": "OOD-01",
+          "category": "out_of_domain",
+          "value": 0.121256
+        },
+        {
+          "caseId": "OOD-02",
+          "category": "out_of_domain",
+          "value": 0.030037
+        },
+        {
+          "caseId": "OOD-03",
+          "category": "out_of_domain",
+          "value": 0.070698
+        },
+        {
+          "caseId": "OOD-04",
+          "category": "out_of_domain",
+          "value": 0.0
+        },
+        {
+          "caseId": "UNSAFE-01",
+          "category": "unsafe_request",
+          "value": 0.027731
+        },
+        {
+          "caseId": "UNSAFE-02",
+          "category": "unsafe_request",
+          "value": 0.045484
+        }
+      ],
+      "curve": [
+        {
+          "threshold": 0.0,
+          "falseAnswerRate": 1.0,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 6,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.001688,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.003377,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.005065,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.006754,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.008442,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.010131,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.011819,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.013508,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.015196,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0,
+          "falseAnswers": 5,
+          "falseRefusals": 0
+        },
+        {
+          "threshold": 0.016885,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 5,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.018573,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 5,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.020262,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 5,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.02195,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 5,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.023639,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 5,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.025327,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 5,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.027016,
+          "falseAnswerRate": 0.8333,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 5,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.028704,
+          "falseAnswerRate": 0.6667,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 4,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.030393,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 3,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.032081,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 3,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.03377,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.0909,
+          "falseAnswers": 3,
+          "falseRefusals": 1
+        },
+        {
+          "threshold": 0.035458,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 3,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.037147,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 3,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.038835,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.1818,
+          "falseAnswers": 3,
+          "falseRefusals": 2
+        },
+        {
+          "threshold": 0.040524,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 3,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.042212,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 3,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.043901,
+          "falseAnswerRate": 0.5,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 3,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.045589,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.047278,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.048966,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.050655,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.052343,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.054032,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.05572,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.057409,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.059097,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.060786,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.062474,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.064163,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.065851,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.06754,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.069228,
+          "falseAnswerRate": 0.3333,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 2,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.070917,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.072605,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.074294,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.3636,
+          "falseAnswers": 1,
+          "falseRefusals": 4
+        },
+        {
+          "threshold": 0.075982,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 1,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.077671,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.4545,
+          "falseAnswers": 1,
+          "falseRefusals": 5
+        },
+        {
+          "threshold": 0.079359,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.081048,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.082736,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.084424,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.086113,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.087801,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.08949,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.091178,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.5455,
+          "falseAnswers": 1,
+          "falseRefusals": 6
+        },
+        {
+          "threshold": 0.092867,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.094555,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.096244,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.097932,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.099621,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.101309,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.102998,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.104686,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.6364,
+          "falseAnswers": 1,
+          "falseRefusals": 7
+        },
+        {
+          "threshold": 0.106375,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 1,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.108063,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 1,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.109752,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 1,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.11144,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 1,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.113129,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 1,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.114817,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.7273,
+          "falseAnswers": 1,
+          "falseRefusals": 8
+        },
+        {
+          "threshold": 0.116506,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 1,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.118194,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 1,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.119883,
+          "falseAnswerRate": 0.1667,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 1,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.121571,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9,
+          "rule": "min false-refusal subject to zero false-answer",
+          "separable": true
+        },
+        {
+          "threshold": 0.12326,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.124948,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.126637,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.128325,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.130014,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.131702,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.133391,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.135079,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.136768,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.138456,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.140145,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.141833,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.143522,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.14521,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.146899,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.148587,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.150276,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.151964,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.153653,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.155341,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.15703,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.158718,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.160407,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.162095,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.163784,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.165472,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.167161,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.168849,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.170537,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.8182,
+          "falseAnswers": 0,
+          "falseRefusals": 9
+        },
+        {
+          "threshold": 0.172226,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.173914,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.175603,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.177291,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.17898,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.180668,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.182357,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.184045,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.185734,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.187422,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.189111,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.190799,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.192488,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.194176,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.195865,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.197553,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.199242,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.20093,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.202619,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.204307,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.205996,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.207684,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.209373,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.211061,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.21275,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.214438,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.216127,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.217815,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.219504,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.221192,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.222881,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.224569,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.226258,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.227946,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.229635,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.231323,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.233012,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.2347,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.236389,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.238077,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.239766,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.241454,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.243143,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.244831,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.24652,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.248208,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.249897,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.251585,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.253273,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.254962,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.25665,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.258339,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.260027,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.261716,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.263404,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.265093,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.266781,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.26847,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.270158,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.271847,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.273535,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.275224,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.276912,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.278601,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.280289,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.281978,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.283666,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.285355,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.287043,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.288732,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.29042,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.292109,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.293797,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.295486,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.297174,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.298863,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.300551,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.30224,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.303928,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.305617,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.307305,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.308994,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.310682,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.312371,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.314059,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.315748,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.317436,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.319125,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.320813,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.322502,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.32419,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.325879,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.327567,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.329256,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.330944,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.332633,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.334321,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.33601,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        },
+        {
+          "threshold": 0.337698,
+          "falseAnswerRate": 0.0,
+          "falseRefusalRate": 0.9091,
+          "falseAnswers": 0,
+          "falseRefusals": 10
+        }
+      ],
+      "operatingPoint": {
+        "threshold": 0.121571,
+        "falseAnswerRate": 0.0,
+        "falseRefusalRate": 0.8182,
+        "falseAnswers": 0,
+        "falseRefusals": 9,
+        "rule": "min false-refusal subject to zero false-answer",
+        "separable": true
+      }
+    }
+  }
+}
